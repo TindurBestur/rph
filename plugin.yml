@@ -1,0 +1,166 @@
+name: ResourcePackHub
+version: '${version}'
+main: net.resourcepackhub.ResourcePackHub
+api-version: '1.21.11'
+author: ResourcePackHub
+description: All-in-one server utilities, ranks, moderation, tablist and resource pack management.
+softdepend: [Vault, PlaceholderAPI]
+
+commands:
+  resourcepackhub:
+    description: Main ResourcePackHub command
+    aliases: [rph]
+    usage: /resourcepackhub
+    permission: resourcepackhub.admin
+  rp:
+    description: Resource pack management
+    usage: /rp <list|enable|disable|reload|giveitem>
+    permission: resourcepackhub.resourcepack.admin
+  spawn:
+    description: Teleport to server spawn
+  setspawn:
+    description: Set server spawn
+    permission: resourcepackhub.setspawn
+  home:
+    description: Teleport to a home
+  sethome:
+    description: Set a home
+  delhome:
+    description: Delete a home
+  warp:
+    description: Teleport to a warp
+  setwarp:
+    description: Create a warp
+    permission: resourcepackhub.warp.set
+  delwarp:
+    description: Delete a warp
+    permission: resourcepackhub.warp.delete
+  tpa:
+    description: Request to teleport to a player
+  tpaccept:
+    description: Accept a teleport request
+  tpdeny:
+    description: Deny a teleport request
+  back:
+    description: Return to your previous location
+  feed:
+    description: Restore hunger
+    permission: resourcepackhub.utility.feed
+  heal:
+    description: Restore health
+    permission: resourcepackhub.utility.heal
+  fly:
+    description: Toggle flight
+    permission: resourcepackhub.utility.fly
+  gmc:
+    description: Creative mode
+    permission: resourcepackhub.utility.gmc
+  gms:
+    description: Survival mode
+    permission: resourcepackhub.utility.gms
+  gma:
+    description: Adventure mode
+    permission: resourcepackhub.utility.gma
+  gmsp:
+    description: Spectator mode
+    permission: resourcepackhub.utility.gmsp
+  msg:
+    description: Private message
+    aliases: [tell, w]
+  reply:
+    description: Reply to a private message
+    aliases: [r]
+  broadcast:
+    description: Broadcast a message
+    aliases: [bc]
+    permission: resourcepackhub.broadcast
+  ban:
+    description: Ban a player
+    permission: resourcepackhub.moderation.ban
+  unban:
+    description: Unban a player
+    permission: resourcepackhub.moderation.ban
+  kick:
+    description: Kick a player
+    permission: resourcepackhub.moderation.kick
+  mute:
+    description: Mute a player
+    permission: resourcepackhub.moderation.mute
+  unmute:
+    description: Unmute a player
+    permission: resourcepackhub.moderation.mute
+  warn:
+    description: Warn a player
+    permission: resourcepackhub.moderation.warn
+  warnings:
+    description: View a player's warnings
+    permission: resourcepackhub.moderation.warn
+  freeze:
+    description: Freeze a player
+    permission: resourcepackhub.moderation.freeze
+  unfreeze:
+    description: Unfreeze a player
+    permission: resourcepackhub.moderation.freeze
+  vanish:
+    description: Toggle vanish
+    permission: resourcepackhub.vanish
+  staffchat:
+    description: Send a staff chat message
+    aliases: [sc]
+    permission: resourcepackhub.staffchat
+  rank:
+    description: Manage ranks
+    permission: resourcepackhub.rank.admin
+  commandwhitelist:
+    description: Manage commands usable by command blocks
+    aliases: [cwl]
+    permission: resourcepackhub.commandwhitelist
+  setmotd:
+    description: Set the join/MOTD message
+    permission: resourcepackhub.admin
+
+permissions:
+  resourcepackhub.admin:
+    default: op
+  resourcepackhub.setspawn:
+    default: op
+  resourcepackhub.warp.set:
+    default: op
+  resourcepackhub.warp.delete:
+    default: op
+  resourcepackhub.broadcast:
+    default: op
+  resourcepackhub.moderation.ban:
+    default: op
+  resourcepackhub.moderation.kick:
+    default: op
+  resourcepackhub.moderation.mute:
+    default: op
+  resourcepackhub.moderation.warn:
+    default: op
+  resourcepackhub.moderation.freeze:
+    default: op
+  resourcepackhub.vanish:
+    default: op
+  resourcepackhub.staffchat:
+    default: op
+  resourcepackhub.rank.admin:
+    default: op
+  resourcepackhub.commandwhitelist:
+    default: op
+  resourcepackhub.resourcepack.admin:
+    default: op
+  resourcepackhub.utility.feed:
+    default: op
+  resourcepackhub.utility.heal:
+    default: op
+  resourcepackhub.utility.fly:
+    default: op
+  resourcepackhub.utility.gmc:
+    default: op
+  resourcepackhub.utility.gms:
+    default: op
+  resourcepackhub.utility.gma:
+    default: op
+  resourcepackhub.utility.gmsp:
+    default: op

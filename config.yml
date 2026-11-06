@@ -1,0 +1,30 @@
+settings:
+  prefix: '&8[&bResourcePackHub&8] &7'
+  language: en
+  teleport-delay-seconds: 0
+  homes-per-player: 5
+  default-rank: default
+  tablist:
+    enabled: true
+    header: '&b&lYour Server\n&7Welcome, &f%player%'
+    footer: '&7Online: &f%online% &8| &7Ping: &f%ping%'
+  command-block:
+    whitelist-mode: true
+    allowed-commands:
+      - say
+      - tell
+      - msg
+      - summon
+      - give
+      - playsound
+      - particle
+  resource-packs:
+    # Each pack needs a direct HTTPS URL and its SHA-1 hash (40 hex characters).
+    # Example:
+    # weapons:
+    #   url: 'https://example.com/weapons.zip'
+    #   sha1: '0123456789abcdef0123456789abcdef01234567'
+    #   required: false
+    packs: {}
+  # model-id: namespace:key (example: dragon_sword: weapons:dragon_sword)
+  item-models: {}
